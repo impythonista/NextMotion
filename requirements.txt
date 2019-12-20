@@ -1,0 +1,7 @@
+Django==2.1
+django-allauth==0.40.0
+django-dotenv==1.4.2
+django-environ==0.4.5
+djangorestframework==3.11.0
+Faker==3.0.0
+
