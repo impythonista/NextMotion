@@ -1,0 +1,158 @@
+{
+	"info": {
+		"_postman_id": "639e80e7-6085-4247-bf66-6cf5780c884e",
+		"name": "NextMotion task",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "partial update",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "token 5e0f85d01c31dd826a965c48c14c60226319f6c2",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "41425@mailinator.com",
+							"type": "text"
+						},
+						{
+							"key": "used",
+							"value": "true",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/invitations/dc21d446-9eeb-4970-ab4f-905bf407b429/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"invitations",
+						"dc21d446-9eeb-4970-ab4f-905bf407b429",
+						""
+					]
+				},
+				"description": "accepted only email , used"
+			},
+			"response": []
+		},
+		{
+			"name": "create invitaiton",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "token 5e0f85d01c31dd826a965c48c14c60226319f6c2",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "test2@mailinator.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/invitations/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"invitations",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list of invitaiton with pagination",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "token 5e0f85d01c31dd826a965c48c14c60226319f6c2",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/invitations/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"invitations",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete invitation",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "token 5e0f85d01c31dd826a965c48c14c60226319f6c2",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/invitations/62c39ea4-9b3b-41ec-b9f8-affaab87165f/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"invitations",
+						"62c39ea4-9b3b-41ec-b9f8-affaab87165f",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
