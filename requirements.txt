@@ -2,6 +2,6 @@ Django>=2.2.8
 django-allauth==0.40.0
 django-dotenv==1.4.2
 django-environ==0.4.5
-djangorestframework==3.11.0
+djangorestframework==3.11.2
 Faker==3.0.0
 
